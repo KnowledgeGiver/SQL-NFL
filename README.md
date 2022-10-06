@@ -4,7 +4,6 @@ This assignment will give you more practice with queries, and get you to deal wi
 ## Setup 
 - Open up your `psql`
 - Copy and paste the commands 1 by 1 in the seed.sql file _Note:_ Some of the commands are pretty long.
-- You should see something like this
 
 - Now that your database was created and seeded complete the prompts below
 
