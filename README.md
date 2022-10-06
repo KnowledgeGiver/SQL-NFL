@@ -2,26 +2,11 @@
 This assignment will give you more practice with queries, and get you to deal with some more advanced parts of the sql language.
 
 ## Setup 
-- Fork and clone this repo.
-- Go inside the folder you just cloned
-- In your terminal run the command **`psql -f seed.sql`**
+- Open up your `psql`
+- Copy and paste the commands 1 by 1 in the seed.sql file _Note:_ Some of the commands are pretty long.
 - You should see something like this
-```sh
- > $: psql -f seed.sql 
-psql:seed.sql:1: NOTICE:  database "nfl" does not exist, skipping
-DROP DATABASE
-CREATE DATABASE
-You are now connected to database "nfl" as user "thiagocavalcante".
-psql:seed.sql:7: NOTICE:  table "players" does not exist, skipping
-DROP TABLE
-psql:seed.sql:8: NOTICE:  table "teams" does not exist, skipping
-DROP TABLE
-CREATE TABLE
-CREATE TABLE
-INSERT 0 32
-INSERT 0 1532
-```
-- Now that your database was created and seeded go ahead and open **pgAdmin** and you will find a database named **nfl**
+
+- Now that your database was created and seeded complete the prompts below
 
 <hr>
 
