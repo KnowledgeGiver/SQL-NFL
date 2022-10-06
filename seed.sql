@@ -1,12 +1,14 @@
+-- command 1
 DROP DATABASE IF EXISTS nfl;
 
+-- command 2
 CREATE DATABASE nfl;
 
-\c nfl
-
+-- command 3 && 4
 drop table if exists players;
 drop table if exists teams;
 
+-- command 5
 create table teams(
 	id serial primary key,
 	name varchar(255) not null,
@@ -17,6 +19,7 @@ create table teams(
 	active boolean
 );
 
+-- command 6
 create table players(
 	id serial primary key,
 	name varchar(255) not null,
@@ -24,6 +27,8 @@ create table players(
 	salary integer,
 	team_id integer references teams
 );
+
+-- command 7
 INSERT INTO teams (name, stadium, head_coach, conference, division, active) 
 	VALUES ('Buffalo Bills', 'Ralph Wilson Stadium', 'Doug Marrone', 'AFC', 'East', 'true'),
 ('Miami Dolphins', 'Sun Life Stadium', 'Joe Philbin', 'AFC', 'East', 'true'),
@@ -58,6 +63,7 @@ INSERT INTO teams (name, stadium, head_coach, conference, division, active)
 ('San Francisco 49ers', 'Levis Stadium', 'Jim Harbaugh', 'NFC', 'West', 'true'),
 ('Seattle Seahawks', 'CenturyLink Field', 'Pete Carroll', 'NFC', 'West', 'true');
 
+-- command 8
 INSERT INTO players (name, position, salary, team_id) 
 	VALUES ('Mario Williams', 'DE', 5900000, 1),
 ('Drayton Florence', 'CB', 4000000, 1),
@@ -1591,4 +1597,3 @@ INSERT INTO players (name, position, salary, team_id)
 ('Ron Parker', 'CB', 465000, 32),
 ('Brandon Browner', 'CB', 415000, 32),
 ('Jameson Konz', 'WR', 390000, 32);
-\q
